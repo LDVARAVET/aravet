@@ -11,12 +11,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomGridViewAdapter extends ArrayAdapter<Item> {
+public class MainMenuGridViewAdapter extends ArrayAdapter<Item> {
 	Context context;
 	int layoutResourceId;
 	ArrayList<Item> data = new ArrayList<Item>();
 
-	public CustomGridViewAdapter(Context context, int layoutResourceId, ArrayList<Item> data) {
+	public MainMenuGridViewAdapter(Context context, int layoutResourceId, ArrayList<Item> data) {
 		super(context, layoutResourceId, data);
 		this.layoutResourceId = layoutResourceId;
 		this.context = context;
@@ -46,6 +46,5 @@ public class CustomGridViewAdapter extends ArrayAdapter<Item> {
 	static class RecordHolder {
 		TextView txtTitle;
 		ImageView imageItem;
-
 	}
 }
