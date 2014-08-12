@@ -4,5 +4,10 @@
     <string name="app_name">Aravet</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    
+    <string name="computer">Computer</string>
+    <string name="electronics">Electronics</string>
+    <string name="clothes">Clothes</string>
 
 </resources>
