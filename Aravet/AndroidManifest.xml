@@ -23,6 +23,14 @@
             </intent-filter>
         </activity>
         <activity
+        	android:name="org.ldv.aravet.ar.clothes.ClothesActivity"
+        	android:label="@string/clothes">
+    	</activity>
+    	<activity
+        	android:name="org.ldv.aravet.ar.computer.ComputerActivity"
+        	android:label="@string/computer">
+    	</activity>
+        <activity
         	android:name="org.ldv.aravet.ar.electonics.ElectronicsActivity"
         	android:label="@string/electronics">
     	</activity>

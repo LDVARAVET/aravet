@@ -2,6 +2,8 @@ package org.ldv.aravet;
 
 import java.util.ArrayList;
 
+import org.ldv.aravet.ar.clothes.ClothesActivity;
+import org.ldv.aravet.ar.computer.ComputerActivity;
 import org.ldv.aravet.ar.electonics.ElectronicsActivity;
 
 import android.support.v7.app.ActionBarActivity;
@@ -61,9 +63,38 @@ public class MainActivity extends ActionBarActivity {
     }
 	
 	private void openARView(int position) {
-		if (position == 2) {
-	    	Intent intent = new Intent(this, ElectronicsActivity.class);
-	        startActivity(intent);
+		Log.e("inside click", "" + position);
+		switch (position) {
+		
+			/*
+			 * Opens up a Computer activity
+			 */
+			case 0: {
+				startActivity(
+					new Intent(this, ComputerActivity.class)
+				);
+				break;
+			}
+			
+			/*
+			 * Opens up an Electronics activity
+			 */
+			case 1: {
+				startActivity(
+					new Intent(this, ElectronicsActivity.class)
+				);
+				break;
+			}
+			
+			/*
+			 * Opens up a Clothes activity
+			 */
+			case 2: {
+				startActivity(
+					new Intent(this, ClothesActivity.class)
+				);
+				break;
+			}
 	    }
 	}
 	
